@@ -1,0 +1,28 @@
+{
+  "name": "mehr-als-nix/php-ftp-client",
+  "description": "New FTP Client based on old PEAR Net_FTP",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "said",
+      "email": "siad.ardroumli@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^9.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "MehrAlsNix\\PhpFtp\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MehrAlsNix\\PhpFtp\\Tests\\": "tests"
+    }
+  },
+  "require": {
+    "ext-ftp": "*"
+  }
+}
