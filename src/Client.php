@@ -525,8 +525,8 @@ class Client
 
         $this->lsMatch = [
             'unix' => [
-                'pattern' => '/(?:(d)|.)([rwxts-]{9})\s+(\w+)\s+([\w\d-()?.]+)\s+' .
-                    '([\w\d-()?.]+)\s+(\w+)\s+(\S+\s+\S+\s+\S+)\s+(.+)/',
+                'pattern' => '/(?:(d)|.)([rwxts-]{9})\s+(\w+)\s+([\w\-()?.]+)\s+' .
+                    '([\w\-()?.]+)\s+(\w+)\s+(\S+\s+\S+\s+\S+)\s+(.+)/',
                 'map' => [
                     'is_dir' => 1,
                     'rights' => 2,
